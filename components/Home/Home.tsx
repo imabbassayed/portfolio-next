@@ -49,16 +49,8 @@ export const Home = ({ home, openToWork }: { home: HomeProps; openToWork: boolea
               )}
               {cta.primary.text}
             </a>
-            <a
-              href={cta.secondary.url}
-              className="home__header__btn home__header__btn--secondary"
-              aria-label={cta.secondary.ariaLabel}
-            >
-              {cta.secondary.icon && (
-                <Icon icon={cta.secondary.icon} width={20} height={20} aria-hidden="true" />
-              )}
-              {cta.secondary.text}
-            </a>
+            
+          
           </div>
         </header>
       </div>

@@ -83,16 +83,7 @@ export const About = ({ about, openToWork }: { about: AboutProps; openToWork: bo
                   )}
                   {cta.primary.text}
                 </a>
-                <a
-                  href={cta.secondary.url}
-                  className="about__card__btn about__card__btn--secondary"
-                  aria-label={cta.secondary.ariaLabel}
-                >
-                  {cta.secondary.icon && (
-                    <Icon icon={cta.secondary.icon} width={20} height={20} aria-hidden="true" />
-                  )}
-                  {cta.secondary.text}
-                </a>
+                
               </div>
             </div>
           </div>

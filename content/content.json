@@ -3,6 +3,7 @@
     "openToWork": true,
     "navItems": [
       { "href": "#about", "label": "About" },
+      { "href": "#education", "label": "Education" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#projects", "label": "Projects" },
       { "href": "#skills", "label": "Skills" },
@@ -12,7 +13,7 @@
   "header": {
     "home": {
       "href": "#home",
-      "label": "LH",
+      "label": "AS",
       "ariaLabel": "Go to top"
     },
     "mobile": {
@@ -20,27 +21,26 @@
     }
   },
   "home": {
-    "name": "Lewis Hadden",
+    "name": "Abbas Sayed",
     "titles": [
-      "Senior Full Stack Engineer",
-      "Lead Frontend Developer",
-      "Lead Software Engineer",
-      "Infrastructure Architect"
+      "Full Stack Engineer",
+      "Emerging AI Developr"
     ],
-    "tagline": "Building exceptional digital experiences with modern web technologies",
+    "tagline": "Full-stack engineer building smart, AI-integrated digital experiences!",
     "openToWorkText": "Open to Work",
     "cta": {
+      
+      "secondary": {
+        "text": "Projects",
+        "url": "#projects",
+        "icon": "mdi:image-multiple",
+        "ariaLabel": "Projects"
+      },
       "primary": {
-        "text": "Let's Talk",
+        "text": "Get in Touch",
         "url": "#contact",
         "icon": "mdi:email",
         "ariaLabel": "Contact me"
-      },
-      "secondary": {
-        "text": "View Work",
-        "url": "#projects",
-        "icon": "mdi:image-multiple",
-        "ariaLabel": "View my work"
       }
     }
   },
@@ -49,28 +49,23 @@
     "label": "Get to know me",
     "openToWorkText": "Available for opportunities",
     "descriptionHeader": "Hello! <span class='wave'>👋</span>",
-    "description": "My name is Lewis, and I’m a highly experienced senior full stack engineer based in Peterborough, UK, available for remote and on-site work across the UK and Europe. I've been working in the web development industry for almost 9 years. I have led several development teams for large-scale projects and worked as an independent developer on both in-house and public-facing products.<br /><br />In my free time, I enjoy going to the gym, boxing, and playing the guitar.<br /><br />I am currently seeking my next opportunity as a Senior or Lead Full Stack developer, either as a freelancer or under permanent employment.<br /><br />Keep scrolling to see my past projects, skills and experience.",
+    "description": "My name is Abbas, and I'm software engineer passionate about transforming complex requirements into high-performance technologies that drive business growth. I enjoy the intersection of Full-Stack development and AI, constantly seeking opportunities within existing features to integrate emerging AI advancements.",
     "image": {
-      "url": "/static/images/portrait.png",
+      "url": "/static/images/portrait1.png",
       "size": {
         "width": 2252,
         "height": 2526
       }
     },
     "cv": {
-      "download": "Lewis_Hadden_CV.pdf"
+      "download": "cv.pdf"
     },
     "cta": {
       "primary": {
-        "text": "Download CV",
-        "url": "/static/documents/Lewis_Hadden_CV.pdf",
+        "text": "Download Resume",
+        "url": "/static/documents/cv.pdf",
         "icon": "mdi:download",
         "ariaLabel": "Download CV as PDF"
-      },
-      "secondary": {
-        "text": "Get in Touch",
-        "url": "#contact",
-        "ariaLabel": "Go to contact section"
       }
     }
   },
@@ -110,119 +105,6 @@
           "Docker",
           "Node.js",
           "Jest"
-        ]
-      },
-      {
-        "company": "Sopra Steria",
-        "title": "Cloud Infrastructure Architect",
-        "years": "Jun 2023 – Dec 2023",
-        "mainTech": ["Azure"],
-        "icon": "devicon:azure",
-        "technologies": [
-          "REST API",
-          "Cosmos DB",
-          "Serverless Function",
-          "Content Delivery Network",
-          "Blob Storage"
-        ]
-      },
-      {
-        "company": "Sopra Steria",
-        "title": "Lead Software Engineer",
-        "years": "Aug 2022 - Apr 2023",
-        "mainTech": ["Angular 8+", "React", "Flutter", "TypeScript"],
-        "icon": "devicon:angularjs",
-        "technologies": [
-          "Node.js",
-          "HTML5",
-          "SCSS / CSS3",
-          "Jest",
-          "PowerBI",
-          "Split Tunnelling (VPN)"
-        ]
-      },
-      {
-        "company": "IBM",
-        "title": "Senior Full Stack Developer",
-        "years": "Jan 2022 - Jul 2022",
-        "mainTech": ["React", "Redux", "TypeScript", "AWS"],
-        "icon": "devicon:react",
-        "technologies": [
-          "JavaScript",
-          "Node.js",
-          "Carbon Design System",
-          "HTML5",
-          "SCSS / CSS3",
-          "Jest + Enzyme",
-          "CloudFormation",
-          "DynamoDB",
-          "CodeCommit",
-          "CodeBuild",
-          "CodePipeline",
-          "Lambda",
-          "EC2",
-          "S3",
-          "API Gateway",
-          "IAM",
-          "JIRA"
-        ]
-      },
-      {
-        "company": "IBM",
-        "title": "Lead Front End Developer",
-        "years": "Jan 2021 - Jan 2022",
-        "mainTech": ["React", "Redux", "TypeScript", "AWS"],
-        "icon": "devicon:react",
-        "technologies": [
-          "HTML5",
-          "SCSS / CSS3",
-          "Jest + Enzyme",
-          "Micro-Frontends",
-          "Carbon Design System",
-          "FeatureHub",
-          "GitHub Workflows",
-          "Adobe Experience Manager",
-          "Adobe Launch",
-          "JIRA"
-        ]
-      },
-      {
-        "company": "IBM",
-        "title": "Front End Developer",
-        "years": "Aug 2018 - Jan 2021",
-        "mainTech": ["React", "Redux", "TypeScript", "Adobe Experience Manager"],
-        "icon": "devicon:react",
-        "technologies": [
-          "JavaScript",
-          "Webpack",
-          "Babel",
-          "HTML5",
-          "SCSS / CSS3",
-          "Jest + Enzyme",
-          "Carbon Design System",
-          "Adobe Dynamic Tag Manager",
-          "Cookie Control (CIVIC)",
-          "Docker",
-          "Linux / Bash",
-          "Apache",
-          "AWS"
-        ]
-      },
-      {
-        "company": "IBM",
-        "title": "QA Tester",
-        "years": "Jan 2018 - Aug 2018",
-        "mainTech": ["Selenium", "WebdriverIO", "Cucumber / Gherkin"],
-        "icon": "skill-icons:selenium",
-        "technologies": [
-          "BrowserStack",
-          "Appium",
-          "Node.js",
-          "JIRA",
-          "React",
-          "JavaScript",
-          "HTML",
-          "CSS"
         ]
       }
     ]
@@ -1033,7 +915,7 @@
       }
     ],
     "home": {
-      "text": "LH",
+      "text": "AS",
       "url": "#home",
       "ariaLabel": "Back to top"
     },
