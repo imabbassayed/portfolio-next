@@ -1,1 +1,1 @@
-export const githubRepoUrl = 'https://github.com/lewishadden/portfolio-next';
+export const githubRepoUrl = 'https://github.com/imabbassayed/portfolio-next';

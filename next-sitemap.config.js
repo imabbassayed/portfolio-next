@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 export default {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://portfolio.lewishadden.com',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://abbassayed.com',
   generateRobotsTxt: false,
   changefreq: 'monthly',
   priority: 1.0,

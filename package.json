@@ -1,14 +1,14 @@
 {
   "name": "portfolio-next",
-  "description": "Lewis Hadden online portfolio built with Next.js",
+  "description": "Abbas Sayed online portfolio built with Next.js forked from Lewis Hadden",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://portfolio.lewishadden.com",
-  "author": "Lewis Hadden <lewishadden@gmail.com>",
+  "homepage": "https://abbassayed.com",
+  "author": "Abbas Sayed <imabbassayed@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lewishadden/portfolio-next.git"
+    "url": "git@github.com:imabbassayed/portfolio-next.git"
   },
   "engines": {
     "node": "24.x",

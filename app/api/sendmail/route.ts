@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createTransport } from 'nodemailer';
 
-const senderEmail = 'portfolio@lewishadden.com';
-const receiverEmail = 'lewishadden@gmail.com';
+const senderEmail = 'portfolio@abbassayed.com';
+const receiverEmail = 'imabbassayed@gmail.com';
 const emailSubject = 'New Portfolio Message';
 
 export async function POST(request: NextRequest) {

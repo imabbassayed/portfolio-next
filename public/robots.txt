@@ -11,7 +11,7 @@ User-agent: Bingbot
 Allow: /
 
 # Host
-Host: https://portfolio.lewishadden.com
+Host: https://abbassayed.com
 
 # Sitemaps
-Sitemap: https://portfolio.lewishadden.com/sitemap.xml
+Sitemap: https://abbassayed.com/sitemap.xml

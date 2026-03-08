@@ -51,7 +51,7 @@
     "descriptionHeader": "Hello! <span class='wave'>👋</span>",
     "description": "My name is Abbas, and I'm software engineer passionate about transforming complex requirements into high-performance technologies that drive business growth. I enjoy the intersection of Full-Stack development and AI, constantly seeking opportunities within existing features to integrate emerging AI advancements.",
     "image": {
-      "url": "/static/images/portrait1.png",
+      "url": "/static/images/portrait2.png",
       "size": {
         "width": 2252,
         "height": 2526
@@ -849,26 +849,20 @@
         {
           "name": "Email",
           "class": "clarity:email-solid",
-          "value": "lewishadden@gmail.com",
-          "link": "mailto:lewishadden@gmail.com"
-        },
-        {
-          "name": "Mobile",
-          "class": "clarity:phone-handset-solid",
-          "value": "+447714512514",
-          "link": "tel:+447714512514"
+          "value": "imabbassayed@gmail.com",
+          "link": "mailto:imabbassayed@gmail.com"
         },
         {
           "name": "LinkedIn",
           "class": "mdi:linkedin",
-          "value": "@lewishadden",
-          "link": "https://www.linkedin.com/in/lewishadden/"
+          "value": "@imabbassayed",
+          "link": "https://www.linkedin.com/in/imabbassayed/"
         },
         {
           "name": "GitHub",
           "class": "mdi:github",
-          "value": "@lewishadden",
-          "link": "https://github.com/lewishadden"
+          "value": "@imabbassayed",
+          "link": "https://github.com/imabbassayed"
         }
       ]
     },
@@ -901,16 +895,16 @@
     }
   },
   "footer": {
-    "tagline": "Senior Full Stack Engineer crafting modern web experiences.",
+    "tagline": "Full-stack engineer building smart, AI-integrated digital experiences!",
     "social": [
       {
         "name": "GitHub",
-        "url": "https://github.com/lewishadden",
+        "url": "https://github.com/imabbassayed",
         "class": "fa6-brands:github"
       },
       {
         "name": "LinkedIn",
-        "url": "https://www.linkedin.com/in/lewishadden/",
+        "url": "https://www.linkedin.com/in/imabbassayed/",
         "class": "devicon:linkedin"
       }
     ],

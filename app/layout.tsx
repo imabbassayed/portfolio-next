@@ -14,13 +14,13 @@ import content from '../content/content.json';
 import { ContactInfo, Social } from '@/types';
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://portfolio.lewishadden.com';
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://abbassayed.com';
 
 const personName = content.home?.name || 'Portfolio';
 const description =
   'Senior full stack developer specialising in React, Next.js, TypeScript, Node.js and Azure, based in the UK. 9+ years’ experience delivering large-scale web apps for IBM, ADP, ERGO and more.';
 const keywords = [
-  'Lewis Hadden',
+  'Abbas Sayed',
   'Full Stack Developer',
   'React Developer',
   'Next.js Developer',
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     title: `${personName} — Freelance Full Stack Developer`,
     description,
     images: [profileImage],
-    creator: '@lewishadden',
+    creator: '@abbassayed',
   },
   robots: {
     index: true,
