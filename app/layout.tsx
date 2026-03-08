@@ -51,7 +51,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `Abbas Sayed || Portfolio`,
+    default: `Portfolio | Abbas Sayed`,
     template: `%s | ${personName}`,
   },
   description,
