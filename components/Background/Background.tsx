@@ -1,75 +1,58 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
+import { Icon } from '@iconify/react';
 
-import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { Background as BackgroundProps } from '@/types';
 
 import './Background.scss';
 
-const desktopParticleCount = 100;
-const mobileParticleCount = 40;
-
-type IdleDeadlineLike = {
-  didTimeout: boolean;
-  timeRemaining: () => number;
-};
-
-type IdleCallbackLike = (deadline: IdleDeadlineLike) => void;
-
-export const Background = () => {
-  const [ready, setReady] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 768px)');
-  const particleCount = isMobile ? mobileParticleCount : desktopParticleCount;
-
-  // Polyfill for requestIdleCallback and cancelIdleCallback
-  const requestIdle = useCallback((cb: IdleCallbackLike) => {
-    if ('requestIdleCallback' in window) {
-      return requestIdleCallback(cb, { timeout: 4000 });
-    }
-    // Fallback: emulate IdleDeadline
-    const start = Date.now();
-    return setTimeout(() => {
-      cb({
-        didTimeout: false,
-        timeRemaining: () => Math.max(0, 50 - (Date.now() - start)),
-      });
-    }, 400);
-  }, []);
-
-  const cancelIdle = useCallback((id: number) => {
-    if ('cancelIdleCallback' in window) {
-      cancelIdleCallback(id);
-    } else {
-      clearTimeout(id);
-    }
-  }, []);
-
-  // Delay heavy background rendering until browser is truly idle (after LCP)
-  useEffect(() => {
-    const id = requestIdle(() => setReady(true)) as number;
-    return () => cancelIdle(id);
-  }, [requestIdle, cancelIdle]);
+export const Background = ({ background }: { background: BackgroundProps }) => {
+  const { title, label, items } = background;
 
   return (
-    <div className="bg-container" aria-hidden="true">
-      {ready && (
-        <>
-          {/* Ambient gradient orbs */}
-          <div className="bg-container__orb bg-container__orb--1" />
-          <div className="bg-container__orb bg-container__orb--2" />
-          <div className="bg-container__orb bg-container__orb--3" />
+    <section id="background" className="background" aria-labelledby="background-heading">
+      <div className="background__container">
+        <div className="background__heading-wrapper">
+          <ScrollReveal animation="slideUp">
+            <span className="background__label">{label}</span>
+          </ScrollReveal>
+          <ScrollReveal animation="slideUp" delay={0.1}>
+            <h2 id="background-heading" className="background__title">
+              {title}
+            </h2>
+          </ScrollReveal>
+        </div>
 
-          {/* Floating particles */}
-          <div className="bg-container__particles">
-            {Array.from({ length: particleCount }, (_, i) => (
-              <div className="bg-particle" key={i}>
-                <div className="bg-particle__dot" />
+        <div className="background__grid">
+          {items.map((item, i) => (
+            <ScrollReveal key={i} animation="fadeInUp" delay={i * 0.1}>
+              <div className="background__card">
+                <div className="background__card__icon-wrapper" aria-hidden="true">
+                  <Icon icon={item.icon} className="background__card__icon" />
+                </div>
+                <div className="background__card__body">
+                  <div className="background__card__header">
+                    <div>
+                      <h3 className="background__card__degree">{item.degree}</h3>
+                      <h4 className="background__card__field">{item.field}</h4>
+                      <span className="background__card__institution">{item.institution}</span>
+                    </div>
+                    <div className="background__card__meta">
+                      <time className="background__card__years">{item.years}</time>
+                      <span className="background__card__location">{item.location}</span>
+                    </div>
+                  </div>
+                  {item.description && (
+                    <p className="background__card__description">{item.description}</p>
+                  )}
+                </div>
               </div>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
+            </ScrollReveal>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

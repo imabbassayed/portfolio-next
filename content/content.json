@@ -3,7 +3,7 @@
     "openToWork": true,
     "navItems": [
       { "href": "#about", "label": "About" },
-      { "href": "#education", "label": "Education" },
+      { "href": "#background", "label": "Background" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#projects", "label": "Projects" },
       { "href": "#skills", "label": "Skills" },
@@ -96,6 +96,21 @@
         "technologies": []
       }
     ]
+  },
+  "background":{
+    "label": "What I've studied",
+    "title": "Background",
+    "items": [
+      {
+        "degree": "Bachelor (Hons) of Science ",
+        "field": "Computer Science, Artificial Intelligence",
+        "institution": "The University of Manchester",
+        "years": "Aug. 2020 – July 2023",
+        "location": "Manchester, United Kingdom",
+        "icon": "mdi:school"
+      }
+    ]
+
   },
   "projects": {
     "title": "Projects",

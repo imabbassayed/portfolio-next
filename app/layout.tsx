@@ -18,7 +18,7 @@ const siteUrl =
 
 const personName = content.home?.name || 'Portfolio';
 const description =
-  'Senior full stack developer specialising in React, Next.js, TypeScript, Node.js and Azure, based in the UK. 9+ years’ experience delivering large-scale web apps for IBM, ADP, ERGO and more.';
+  'Full-stack engineer building smart, AI-integrated digital experiences!';
 const keywords = [
   'Abbas Sayed',
   'Full Stack Developer',
@@ -51,7 +51,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `Abbas Sayed | SWE`,
+    default: `Abbas Sayed || Portfolio`,
     template: `%s | ${personName}`,
   },
   description,

@@ -4,6 +4,7 @@ export interface ResumeData {
   home: Home;
   about: About;
   experience: Experience;
+  backgroudn: Background;
   projects: Projects;
   skills: Skills;
   contact: Contact;
@@ -164,6 +165,22 @@ export interface Theme {
 export interface Technology {
   class: string;
   name: string;
+}
+
+export interface BackgroundItem {
+  degree: string;
+  field: string;
+  institution: string;
+  years: string;
+  location: string;
+  description?: string;
+  icon: string;
+}
+
+export interface Background {
+  title: string;
+  label: string;
+  items: BackgroundItem[];
 }
 
 export interface ExperienceItem {

@@ -17,7 +17,7 @@ import './page.scss';
 
 export default async function Page() {
   const pageData: ResumeData = await getPageContent();
-  const { global, header, home, about, experience, projects, skills, contact, footer } = pageData;
+  const { global, header, home, about, experience, background, projects, skills, contact, footer } = pageData;
 
   return (
     <>
@@ -26,13 +26,13 @@ export default async function Page() {
       <main id="main-content">
         <Home home={home} openToWork={global.openToWork} />
         <About about={about} openToWork={global.openToWork} />
+        <Background background={background}  />
         <Experience experience={experience} />
         <Projects projects={projects} />
         <Skills skills={skills} />
         <LazyContact contact={contact} />
         <Footer footer={footer} navItems={global.navItems} />
       </main>
-      <Background />
     </>
   );
 }
