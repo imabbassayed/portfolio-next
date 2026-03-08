@@ -4,7 +4,7 @@ export interface ResumeData {
   home: Home;
   about: About;
   experience: Experience;
-  backgroudn: Background;
+  background: Background;
   projects: Projects;
   skills: Skills;
   contact: Contact;
