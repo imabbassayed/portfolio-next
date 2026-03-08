@@ -116,68 +116,118 @@
     "title": "Projects",
     "label": "What I've built",
     "items": [
-      {
-        "title": "ADP RUN",
-        "startDate": "2025",
-        "description": "I am currently contracted to ADP, a global leader in payroll and HR solutions, where I am working on their ADP RUN platform. My role involves developing new features and enhancements for the platform, using feature flags to enable a highly customisable user experience. I use React and Tailwind CSS to build a highly responsive, mobile-first user experience. I am also responsible for writing comprehensive unit tests using Jest and React Testing Library, as well as e2e tests using Cypress to ensure the reliability and maintainability of the codebase.",
-        "theme": {
-          "text": "light",
-          "border": "light",
-          "background": "dark"
+      
+        {
+          "title": "TicketCrusher",
+          "startDate": "2024",
+          "description": "A free community tool that helps California drivers fight speeding tickets by generating personalized Trial by Written Declaration defense letters. Built a RAG pipeline that vectorizes California Vehicle Code sections into Pinecone, retrieving the 4 most relevant statutes per ticket via cosine similarity and passing them as legal context to the OpenAI API for letter generation.",
+          "theme": {
+            "text": "light",
+            "border": "light",
+            "background": "dark"
+          },
+          "thumbnail": "mdi:gavel",
+          "images": [
+            {
+              "url": "/static/images/projects/ticketcrusher/home.jpeg",
+              "alt": "TicketCrusher home page",
+              "size": { "width": 1920, "height": 1080 }
+            }
+          ],
+          "url": "https://ticketcrusher.vercel.app",
+          "technologies": [
+            { "class": "devicon:react", "name": "React" },
+            { "class": "devicon:nodejs", "name": "Node.js" },
+            { "class": "devicon:express", "name": "Express" },
+            { "class": "devicon:openai", "name": "OpenAI API" }
+          ]
         },
-        "thumbnail": "tdesign:money",
-        "images": [
-          {
-            "url": "/static/images/projects/run/home-page.png",
-            "size": {
-              "width": 3584,
-              "height": 1956
-            }
+        {
+          "title": "Calendar",
+          "startDate": "2023",
+          "description": "A cross-platform calendar application that goes beyond conventional scheduling by helping users understand how their time is actually spent. Features category tagging, a time allocation dashboard, Google Calendar sync, and a content-based recommendation engine that surfaces personalized suggestions using cosine similarity on weighted event feature vectors.",
+          "theme": {
+            "text": "light",
+            "border": "light",
+            "background": "dark"
           },
-          {
-            "url": "/static/images/projects/run/hero.png",
-            "size": {
-              "width": 620,
-              "height": 394
-            }
+          "thumbnail": "mdi:calendar-month",
+          "images": [
+           
+          ],
+          "url": "https://github.com/imabbassayed/calendar-react-native",
+          "technologies": [
+            { "class": "devicon:react", "name": "React Native" },
+            { "class": "devicon:firebase", "name": "Firebase" },
+            { "class": "devicon:flask", "name": "Flask" },
+            { "class": "devicon:pandas", "name": "Pandas" },
+            { "class": "devicon:numpy", "name": "NumPy" }
+          ]
+        },
+        {
+          "title": "Hex Game Agent",
+          "startDate": "2023",
+          "description": "An AI agent built to play the strategic board game Hex, achieving a 78% win rate against 30+ competing agents in a tournament-style evaluation. Implemented Monte Carlo Tree Search with Upper Confidence Bound node selection, optimized simulation depth to balance exploration and exploitation, and integrated opening-move strategies to strengthen early-game board control.",
+          "theme": {
+            "text": "light",
+            "border": "dark",
+            "background": "light"
           },
-          {
-            "url": "/static/images/projects/run/pde.webp",
-            "size": {
-              "width": 1492,
-              "height": 839
-            }
+          "thumbnail": "mdi:hexagon-multiple",
+          "images": [],
+          "url": "",
+          "technologies": [
+            { "class": "devicon:python", "name": "Python" },
+            { "class": "devicon:pandas", "name": "Pandas" },
+            { "class": "devicon:numpy", "name": "NumPy" }
+          ]
+        },
+        {
+          "title": "SMS Spam Classifier",
+          "startDate": "2023",
+          "description": "A Naive Bayes spam classifier built from scratch, trained on labeled SMS data using conditional word probabilities, text preprocessing, and Laplace smoothing. Evaluated against a train/test split with log-probability aggregation for numerical stability, achieving 83% accuracy with detailed analysis of false positives and negatives.",
+          "theme": {
+            "text": "light",
+            "border": "dark",
+            "background": "light"
           },
-          {
-            "url": "/static/images/projects/run/login-screen.png",
-            "size": {
-              "width": 3024,
-              "height": 1638
-            }
-          }
-        ],
-        "url": "https://online.adp.com/signin/v1/?APPID=RUN&productId=80e309c3-70c3-bae1-e053-3505430b5495",
-        "technologies": [
-          {
-            "class": "devicon:react",
-            "name": "React"
+          "thumbnail": "mdi:message-alert",
+          "images": [
+            
+          ],
+          "url": "",
+          "technologies": [
+            { "class": "devicon:python", "name": "Python" },
+            { "class": "devicon:pandas", "name": "Pandas" },
+            { "class": "devicon:numpy", "name": "NumPy" }
+          ]
+        },
+        {
+          "title": "SpendWise",
+          "startDate": "2023",
+          "description": "A personal finance tool that helps users understand their spending patterns through 10+ interactive visualizations and AI-powered saving advice. Users can define custom expense categories with priority levels, enabling the model to deliver more accurate and actionable financial recommendations tailored to individual habits.",
+          "theme": {
+            "text": "light",
+            "border": "light",
+            "background": "dark"
           },
-          {
-            "class": "devicon:tailwindcss",
-            "name": "Tailwind CSS"
-          },
-          {
-            "class": "devicon:webpack",
-            "name": "Webpack"
-          },
-          {
-            "class": "devicon:cypressio",
-            "name": "Cypress IO"
-          }
-        ]
-      }
+          "thumbnail": "mdi:wallet",
+          "images": [
+           
+          ],
+          "url": "https://github.com/imabbassayed/spendwise",
+          "technologies": [
+            { "class": "devicon:python", "name": "Python" },
+            { "class": "devicon:flask", "name": "Flask" },
+            { "class": "devicon:streamlit", "name": "Streamlit" },
+            { "class": "devicon:pandas", "name": "Pandas" },
+            { "class": "devicon:numpy", "name": "NumPy" }
+          ]
+        }
+
+
     ],
-    "ctaText": "View Details"
+    "ctaText": "View"
   },
   "skills": {
     "title": "Skills",
