@@ -173,6 +173,9 @@ export interface ExperienceItem {
   mainTech: string[];
   icon: string;
   technologies: string[];
+  description: string;
+
+
 }
 
 export interface NavItem {

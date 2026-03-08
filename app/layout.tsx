@@ -51,7 +51,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `Freelance Senior Full Stack Developer | React, Next.js, TypeScript | ${personName}, UK`,
+    default: `Abbas Sayed | SWE`,
     template: `%s | ${personName}`,
   },
   description,

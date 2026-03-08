@@ -6,7 +6,7 @@ import { ExperienceItem } from '@/types';
 
 import './TimelineItem.scss';
 
-const TimelineItem = ({ technologies, mainTech, title, company, years, icon }: ExperienceItem) => {
+const TimelineItem = ({ technologies, mainTech, title, company, description, years, icon }: ExperienceItem) => {
   return (
     <div className="timeline__item" role="listitem">
       {/* Icon dot on the timeline line — outside ScrollReveal so position: absolute anchors to the timeline item, not the animated wrapper */}
@@ -26,6 +26,10 @@ const TimelineItem = ({ technologies, mainTech, title, company, years, icon }: E
             </div>
             <time className="timeline__item__date">{years}</time>
           </div>
+
+          {description && (
+          <p className="timeline__item__description">{description}</p>
+        )}
 
           <div className="timeline__item__main-badges">
             {mainTech.map((technology, i) => (
